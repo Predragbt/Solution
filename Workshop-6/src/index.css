@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0px 30px;
+}
+
+button {
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+.header-home {
+  text-decoration: none;
+  color: blue;
+  font-size: 50px;
+}
+
+.header-favorites {
+  font-size: 60px;
+  color: blue;
+}
+
+.header-favorites:hover,
+.header-home:hover {
+  color: blueviolet;
+}
+
+.all-images {
+  height: 500px;
+  width: 600px;
+}
+
+.image-container-links {
+  position: relative;
+  display: inline-block;
+}
+
+.link-centered-to-img {
+  display: none;
+}
+
+.image-container-links:hover .link-centered-to-img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
